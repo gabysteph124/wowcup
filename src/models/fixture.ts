@@ -64,9 +64,7 @@ export default class Fixture implements IRowable {
     const hasResult = [Status.Playing, Status.Finished].includes(this.status)
     const score = hasResult
       ? c.bold(
-          `${emoji.get('soccer')} ${this.home.goals} - ${
-            this.away.goals
-          } ${emoji.get('soccer')}`
+          `${this.home.goals} - ${this.away.goals}`
         )
       : 'N/A'
 
